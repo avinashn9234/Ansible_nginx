@@ -1,0 +1,9 @@
+---
+
+docker_py_deps:
+  - "python3"
+  - "platform-python-devel"
+  - "platform-python-pip.noarch"
+  - "openssl-devel"
+  - "libffi-devel"
+  - "python3-libselinux"

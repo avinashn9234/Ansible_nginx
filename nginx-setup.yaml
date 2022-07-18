@@ -1,0 +1,12 @@
+--- # Nginx container setup
+-  hosts: nginx
+   remote_user: root
+   become: yes
+   become_method: sudo
+   connection: ssh
+   gather_facts: yes    
+   
+   roles:
+     - ansible-role-docker
+     - ansible-role-logrotate
+     - ansible-role-docker-nginx
